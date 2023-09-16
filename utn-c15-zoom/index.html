@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fetch de ejemplo</title>
+</head>
+<body>
+    <h1> Pokemon</h1>
+    <div id="pokemonData"></div>
+
+    <script>
+        fetch('https://pokeapi.co/api/v2/pokemon/2')
+        .then(response => response.json())
+        .then((data)=>{
+            const pokemonData = document.getElementById("pokemonData")
+            pokemonData.innerHTML =  `Name: ${data.name} 
+            `})
+        .catch(error => {
+            console.log('Eror al obtener los datos del Pokemons');
+        }
+        )   
+    </script>
+        
+        
+    
+</body>
+</html>

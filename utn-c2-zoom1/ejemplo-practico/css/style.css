@@ -1,0 +1,80 @@
+*{
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgba(240, 248, 255, 0.575);
+}
+
+.header{
+    border: 1px solid blue;
+    background-image: url("../img/car.jpg");
+    /* Toma el ancho del elemento */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:center ;
+    height: 400px;
+}
+
+.nav-item{
+    display: inline-block;
+    margin: 0 10px;
+}
+
+/* Haces que sea hijo directo , das mas especificidad*/
+.nav-item > a{
+    text-decoration: none;
+    color: 25px;
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.title{
+    text-align: center;
+    color: aliceblue;
+    font-size: 40px;
+    margin-top: 20px;
+}
+
+/** Aca empiezan los estilos del main **/
+
+
+/* en cualquier dispositivo ocupa el 100% */
+.main{
+    width: 100%;
+    padding: 15px;
+}
+
+.container-about{
+    background-color: aliceblue;
+    box-shadow: 0 0 10px #222;
+    padding: 15px 0;
+    border-radius: 7px;
+}
+
+.container-about > h2 {
+    text-align: center;
+    font-size: 30px;
+}
+
+.container-about p{
+    text-align: center;
+    font-size: 20px;
+}
+
+.container-cards{
+    border: 1px solid;
+    margin-top: 25px;
+    display: inline-block;
+}
+
+.card{
+    display: inline-block;
+}
+
+.card-img{
+    width:  300px;
+    
+}

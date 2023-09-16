@@ -1,0 +1,24 @@
+body{
+    background-color: bisque;
+}
+
+/* Grid no usa margin*/
+
+.container{
+    margin: 15px;
+    display: grid;
+    /* grid-template-columns: repeat(2,1fr) ; /*Repetite 2 con una medida de 1fr*/
+    /* fr es la fraccion de la pantalla */
+    grid-template-rows: repeat(2,1fr);
+
+    width: 90%; /* Le das un 80% de la pantalla*/
+    
+
+}
+
+.item{
+    background-color: chartreuse;
+    margin: 10px;
+    border-radius: 15px;
+    font-size: 15px;
+}

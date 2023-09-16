@@ -1,0 +1,32 @@
+body{
+    background-color: rgba(255, 255, 255, 0.568);
+}
+
+nav{
+    position: fixed;
+    width: 120px;
+    height: 100%;
+    background-color: rgba(170, 210, 236, 0.658);
+}
+
+nav a{
+    display: block;
+    color: white;
+    text-decoration: none;
+    margin-top: 5%;
+    margin-left: 30px;
+    margin-bottom: 10px;
+    color: black;
+}
+
+.home{
+    /* background-color: rgb(63, 69, 131); */
+    margin-right: 30px;
+    margin-top: 5px;
+
+}
+
+main{
+    margin-left: 180px;
+    padding: 10px;
+}

@@ -1,0 +1,84 @@
+body{
+    background-color: antiquewhite;
+    box-sizing: border-box;
+    
+}
+
+/* Das estilo solo a lo de afuera */
+footer{
+    background-color: rgb(231, 219, 186);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 200px;
+}
+
+/* toqueteas a los hijos */
+.social-icons{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 2px;
+    padding: 2px;
+    list-style-type: none;
+    position: relative;
+}
+
+/* Tas tocando la lista, te los separo */
+.social-icons li{
+    margin: 0px 10px;
+}
+
+
+.social-icons li a {
+    color: blue;
+    font-size: 25px;
+}
+
+/* Tenes 50 y 50 del ancho de los contenedores del footer */
+ul{
+    width: 50%;
+}
+
+.red li a{
+    color: crimson;
+}
+
+
+/* para movilizar a los iconos display:flex */
+.contact{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    margin-left: auto;
+    list-style-type: none;
+    font-size: 25px;
+    width: 50%;
+    margin-left: 70px;
+}
+
+.contact li{
+    padding-bottom: 10px;
+    font-size: 18px
+}
+
+.contact a{
+    margin-right: 30px;
+    font-size: 25px;
+}
+
+.contact li{
+    padding-bottom: 30px;
+    font-size: 25px
+}
+
+.fa-phone, .fa-whatsapp{
+    color: darkgreen;
+}
+
+p{
+    position: absolute;
+    top: 70px;
+}

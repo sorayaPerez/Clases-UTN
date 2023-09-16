@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+    <!-- El atributo ACTION define la ubicación (URL) donde se envían los datos que el formulario ha recopilado cuando se validan -->
+
+    <!-- El atributo METHOD define con qué método HTTP se envían los datos (generalmente get o post). -->
+
+    <!-- Los  NAME (nombres) son importantes tanto en el lado del cliente como del servidor; le dicen al navegador qué nombre debe dar a cada dato y, en el lado del servidor, dejan que el servidor maneje cada dato por su nombre. Los datos del formulario se envían al servidor como pares de nombre/valor. -->
+
+    <!-- Ten en cuenta el uso del atributo FOR en todos los elementos <label>, que toma como valor el id del control de formulario con el que está asociado; así es como asocias un formulario con su etiqueta.
+    Hacer esto presenta muchas ventajas porque la etiqueta está asociada al control del formulario y permite que los usuarios con ratón, panel táctil y dispositivos táctiles hagan clic en la etiqueta para activar el control correspondiente, y también proporciona accesibilidad con un nombre que los lectores de pantalla leen a sus usuarios. -->
+
+    <!-- <input/TEXT> el valor predeterminado para este atributo. Representa un campo de texto básico de una sola línea que acepta cualquier tipo de entrada de texto. -->
+
+    <!-- <input/EMAIL>, define un campo de texto de una sola línea que solo acepta una dirección de correo electrónico. También hace que aparezca un diseño de teclado más apropiado para introducir direcciones de correo electrónico (por ejemplo, con un símbolo @ por defecto) en dispositivos con teclados dinámicos, como teléfonos inteligentes.  -->
+    
+    <!-- La etiqueta <INPUT> es un elemento vacío, lo que significa que no necesita una etiqueta de cierre. 
+    El elemento <textarea> no es un elemento vacío, lo que significa que debe cerrarse con la etiqueta de cierre adecuada. 
+    Esto tiene un impacto en una característica específica de los formularios: el modo en que defines el valor predeterminado. 
+    Para definir el valor predeterminado de un elemento <input>, debes usar el atributo value  
+    Por otro lado, si deseas definir un valor predeterminado para un elemento <textarea>, lo colocas entre las etiquetas de apertura y cierre del elemento <textarea>
+        -->
+
+
+    <form action=""> 
+        <h1> ¡Contactanos! </h1>
+        <div>
+            <label for="nombre"> Nombre </label>
+            <input type="text" id="nombre" name="nombreUsuario">
+        </div>
+
+        <div>
+            <label for="mail"> Correo Electrónico </label>
+            <input type="text" id="mail" name="mailUsuario" value="">
+        </div>
+
+        <div>
+            <label for="mensaje"> Dejanos tu mensaje: </label>
+            <textarea name="mensajeUsuario" id="mensaje">  </textarea>
+        </div>
+
+        <button type="submit" class="button">Enviar</button>
+    </form>
+    
+</body>
+</html>
