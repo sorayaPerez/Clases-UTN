@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Primeros pasos con DOM </title>
+
+    <link rel="stylesheet" href="./css/dom.css">
+    <!-- <script src="./js/Simulador.js"></script> -->
+    <!-- Si ponemos el boton del script aca y considerando que se lee de arriba para
+abajo, aparece el script de js, entonces lo va a leer y se va a encontrar por ejemplo con
+let btn = document.querySelector('#btn') //*! Guardas el boton
+Pero como todavia no leyo el html, el contenido va a ser nulo!-->
+    <script defer src="./js/dom.js"></script>
+    <!-- Al agregar el DEFER hacer que el codigo js y html carguen en paralelo -->
+
+</head>
+
+<body>
+    <h1> Agregar tareas diarias </h1>
+    <button id="btn"> click me</button>
+
+    <div class="urgente">
+        <h1> Agregar tareas urgente</h1>
+        <button id="btnUrgente"> click me</button>
+    </div>
+
+    <!-- Script en body -->
+    <!-- <script src="./js/Simulador.js"></script> -->
+
+</body>
+
+</html>
