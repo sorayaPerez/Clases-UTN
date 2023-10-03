@@ -52,21 +52,22 @@ if ((userName === user.firstname) && (password = user.password)) {
 }
 // Con login solo NO damos la opcion de //* Volver a intentarlo
 
-let userName;
-let userPassword;
-let validate; 
-let confirmValidate;
+// let userName;
+// let userPassword;
+// let validate; 
+// let confirmValidate;
 
-do {
-// estandarizar los datos -- JS es //*CASE SENSITIVE
-//!                                    Todo en minuscula    Borrar los espacios en blanco
-    userName = prompt("Ingresar tu nombre").toLocaleLowerCase().trim() 
-    userPassword = prompt("Ingresar contraseña")
-    validate = login()
-    if (validate === false) {
-        confirmValidate= confirm('¿Desea ingresar nuevamente los datos?')
-    } 
-} while (!validate  && confirmValidate === true);
+// //*! do-while: se ejecuta una vez, y despues evalua si se sigue iterando
+// do {
+// // estandarizar los datos -- JS es //*CASE SENSITIVE
+// //!                                    Todo en minuscula    Borrar los espacios en blanco
+//     userName = prompt("Ingresar tu nombre").toLocaleLowerCase().trim() 
+//     userPassword = prompt("Ingresar contraseña")
+//     validate = login()
+//     if (validate === false) {
+//         confirmValidate= confirm('¿Desea ingresar nuevamente los datos?')
+//     } 
+// } while (!validate  && confirmValidate === true);
 
 // El do while se va a ejecutar mientras que  validate sea falso y confirmValidate sea
 
@@ -85,4 +86,28 @@ do {
 
 
 //? 2. Información de la cuenta: Mostrar información relevante de la cuenta de usuario, como el saldo disponible, el numero de cuenta, el nombre del titular, etc.
+
+let optionInicio = prompt("Bienvenido al home banking, que desea hacer \n 1- iniciar sesion \n 2-registrese \n 3-salir")
+
+let userName;
+let userPassword;
+let validate; 
+let confirmValidate;
+
+// Mientras la opcion sea distinta de 3, se va a ejcutar el switch
+while(option ==='3'){
+    switch(optionInicio){
+        case '1':
+            userName = prompt("Ingresar tu nombre").toLocaleLowerCase().trim() 
+            userPassword = prompt("Ingresar contraseña")
+            login()
+            break;
+        case '2':
+            //registre usuario
+            break;
+        case '3':
+            //
+            break;
+    }
+}
 
