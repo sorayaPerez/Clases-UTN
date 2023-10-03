@@ -32,6 +32,8 @@ console.log(p);
 
 
 console.log(h1.textContent); //Traes el contenido
+
+
 // Ejercicio 2
 
 console.log(p.textContent);
