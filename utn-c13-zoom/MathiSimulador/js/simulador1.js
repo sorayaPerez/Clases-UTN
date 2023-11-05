@@ -2,23 +2,22 @@ let div = document.querySelector('#container')
 
 //?. Inicio de sesion: Permitir a los usuarios iniciar sesion con sus credenciales (nombre de usuario y contraseña) para acceder a su cuenta bancaria
 
-
 //! NO es escalable el "database": tenes que repetir para c/ usuario
 // let firstname= 'lo'
 // let lastName= 'perez'
 // let password ='pez'
 // let email = 'perritofeliz@gmail.com'
 
-// Lo pasamos a un OBJETO asociado a un user
-//* Optimizas: pasas de 4 variables a 1
+//! NO es escalable el "database": tenes que repetir el array anterior para c/ usuario
+//* Optimizas: pasas de 4 variables a un OBJETO {}
 let user ={
-    firstname: "lo",
+    firstname: "lo",    //Propiedades del objeto
     lastName: "pez",
     password:"pez",
     email : 'perritofeliz@gmail.com',
 }
 
-// Ahora creas una estructura que agrupa TODOS los usuarios
+// Ahora creas una estructura (ARRAY []) que agrupa TODOS los usuarios. Guarda el objeto user
 // todo: Funcion que guarde los usuarios que se registran
 let users =[user]
 
@@ -47,12 +46,20 @@ let userPassword;
 let validate; 
 let confirmValidate;
 
-// do-while: se ejecuta UNA vez, y despues EVALUA si se sigue iterando
+// El for/while siempre se ejecuta y lo primero que se evalua es la condición.
+// Por lo que en el ejemplo de abajo como no se cumple la condición directamente no se ejecuta.
+// while(2 !==2){
+// }
+
+// do-while: 
+// Se ejecuta UNA vez lo del DO,
+// DESPUES de eso evalua si se sigue iterando o la termina en la primer iteración.
+
 do {
 //!                                    Todo en minuscula    Borrar los espacios en blanco
     userName = prompt("Ingresar tu nombre").toLocaleLowerCase().trim() 
     userPassword = prompt("Ingresar contraseña")
-    validate = login()
+    validate = login() // Recibe true or false 
     if (validate === false) {
         confirmValidate= confirm('¿Desea ingresar nuevamente los datos?') //Confirm devuelve true or false dependiendo si acepta o no
     } 

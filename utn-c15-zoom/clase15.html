@@ -4,16 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fetch de ejemplo</title>
+    <!-- <script src="clase15.js"></script> -->
 </head>
 <body>
     <h1> Pokemon</h1>
     <div id="pokemonData"></div>
 
     <script>
-        fetch('https://pokeapi.co/api/v2/pokemon/2')
-        .then(response => response.json())
+        // Hacemos una request a la pokeapi para que nos muestre sus propiedaes: nombre, habilidades
+        fetch('https://pokeapi.co/api/v2/pokemon/2') // Usas FETCH 
+        .then(response => response.json()) // .then haces la PROMESA. La respuesta que le estamos haciendo a la peticion de la request nos la trae en un JSON.
         .then((data)=>{
-            const pokemonData = document.getElementById("pokemonData")
+            const pokemonData = document.getElementById("pokemonData") // en poquemondata guardas el div
             pokemonData.innerHTML =  `Name: ${data.name} 
             `})
         .catch(error => {
@@ -23,6 +25,5 @@
     </script>
         
         
-    
 </body>
 </html>

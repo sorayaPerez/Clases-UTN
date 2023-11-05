@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>New Cat Image on Refresh</h1>
+    <div id="imageContainer">
+        <img id="catImage" src="#" alt="New Cat Image">
+    </div>
+
+    <script>
+        const catImage = document.getElementById('catImage');
+
+        function fetchNewCatImage() {
+            fetch('https://api.thecatapi.com/v1/images/search')
+                .then(response => response.json())
+                .then(data => {
+                    const imageUrl = data[0].url;
+                    catImage.src = imageUrl;
+                })
+                .catch(error => {
+                    console.error('Error:', error);
+                    catImage.alt = 'Error loading image';
+                });
+        }
+
+        // Cargar una nueva imagen al cargar la página
+        window.addEventListener('load', fetchNewCatImage);
+
+        // Opcional: Cargar una nueva imagen al hacer clic en la imagen existente
+        catImage.addEventListener('click', fetchNewCatImage);
+    </script>
+</body>
+
+</html>

@@ -1,3 +1,6 @@
+// Ejercicio 1:
+// Crea una función llamada promediarNotas que tome un arreglo de objetos, donde cada objeto representa a un estudiante con su nombre y un arreglo de notas. La función debe calcular el promedio de las notas de cada estudiante y agregarlo como una nueva propiedad llamada "promedio" en cada objeto. Luego, devuelve el arreglo de objetos modificado.
+
 // Ejemplo de Estudiantes
 // const estudiantes = [
 //     { nombre: "Juan", notas: [85, 90, 78] },

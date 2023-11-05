@@ -1,0 +1,12 @@
+1. Inicio de sesion: Permitir a los usuarios iniciar sesion con sus credenciales (nombre de usuario y contraseña) para acceder a la cuenta bancaria.
+2. Informacion de la cuenta: Mostrar informacion relevante de la cuenta del suaurio, como el saldo disponible, el numero de cuenta, el nombre del titular, etc
+3 Consulta de movimientos: permitit a los usuarios ver los movimientos de su cuenta como transacciones, depositos, retiros, pagos. etc.
+4. Transferecias: Permitir a los usarios realizar transferencias de dinero entre sus cuentas o cuentas de terceros
+5. Pagos de servicio: Permiti a los usuarios pagar servicios como facturas de luz, agua telefono, etc. 
+6. Cambio de contraseña: Permitir a los usuarios pagar servicios como facturas de luz, agua, telefono. etc.
+7. Cierre de sesion: Permitir a los usuarios cerrar sesion en su cuenta para proteger su privacidad.
+8. Validación de datos: Asegurarse de que los datos ingresados por los usuarios sean validos y seguros antes de reliar cualquier operacion.
+9. Diseño y experiencia de usuario: Crear una interfaz de suuario intuitiva y atactiva que sea facil de suar y que proporcione una experiencai agradable al usuario.
+10. Seguridad: Implementar medidas de seguridad, como encriptación de contraseñas, para proteger la informacion de los usuarios
+11. Manejo de errores: Porporcionar mensajes de error claros y utiles en aso de que ocurra algun error durante una transaccion.
+12. Registro de actividades: Registarr las actividades importantes realizadas por los usuarios para llevar u registro de transacciones y operaciones realizadas.
